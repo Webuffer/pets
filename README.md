@@ -1,7 +1,7 @@
 Pets-Go
 =======
 
-This is the index of a animals website called Pets Go.
+This is the index of a animal website called Pets Go.
 
 
 2013年4月，一个经管朋友参加了华农的营销比赛，应邀请我帮忙做了一个主页，介绍营销主题即宠物。
