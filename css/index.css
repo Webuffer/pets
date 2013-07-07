@@ -1,0 +1,492 @@
+
+/* 宠宠网主页样式
+文件建立日期：2013年5月9日
+最后修改日期：2013年5月9日
+作者：郑坚鹏（Webuffer）
+ */
+
+body{
+	font: 15px arial, sans-serif;
+	margin:0px;
+	padding:0px;
+	color:#333;
+	background-color: rgb(240,240,241);
+}
+/* 样式公共部分 */
+.icon{
+	width:35px;
+	height:35px;
+	display: inline-block;
+	margin-bottom: -10px;
+	margin-right: 5px;
+}
+/* 主页顶部*/
+.header{
+	width:100%;
+	height:auto;
+}
+.btn{
+	border-radius: 4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	font-size: 15px;
+	padding:0px;
+	cursor:pointer;
+}
+.top-bar{
+	width:100%;
+	height:83px;
+	border-bottom: 1px solid #0099FF;
+	background-color: #fff;
+}
+.field-account, .field-psd, .field-btn{
+	float: left;
+	position: absolute;
+	margin-top: 25px;
+}
+.field-account{
+	margin-left: 200px;
+}
+.field-psd{
+	margin-left: 460px;
+}
+.field-btn{
+	margin-left: 700px;
+}
+.input-field{
+	width:220px;
+	height:30px;
+	border:1px solid #bbb;
+	border-radius: 4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	outline: none;
+	font-size: 15px;
+	text-indent: 3px; 
+	padding:0px;
+}
+.login-submit{
+	width:80px;
+	height:32px;
+	border:0px;
+	background: rgb(255,183,107); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(255,183,107,1) 0%, rgba(255,167,61,1) 50%, rgba(255,124,0,1) 51%, rgba(255,127,4,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,183,107,1)), color-stop(50%,rgba(255,167,61,1)), color-stop(51%,rgba(255,124,0,1)), color-stop(100%,rgba(255,127,4,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,183,107,1) 0%,rgba(255,167,61,1) 50%,rgba(255,124,0,1) 51%,rgba(255,127,4,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,183,107,1) 0%,rgba(255,167,61,1) 50%,rgba(255,124,0,1) 51%,rgba(255,127,4,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,183,107,1) 0%,rgba(255,167,61,1) 50%,rgba(255,124,0,1) 51%,rgba(255,127,4,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,183,107,1) 0%,rgba(255,167,61,1) 50%,rgba(255,124,0,1) 51%,rgba(255,127,4,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76b', endColorstr='#ff7f04',GradientType=0 ); /* IE6-9 */
+	color:#fff;
+}
+.error-box{
+	width:100%;
+	height:25px;
+	background-color: #000;
+	color:#fff;
+	border:1px solid #bbb;
+	border-radius: 4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	text-indent: 3px;
+	line-height: 25px;
+	margin-left:0px;
+	margin-top: 5px;
+}
+.register{
+	float: left;
+	position: absolute;
+	margin-top: 32px;
+	margin-left: 800px;
+	color: #333;
+	text-decoration: none;
+}
+.register:hover{
+	color:#0099FF;
+}
+.logo-bar{
+	width: 1100px;
+	margin:0px auto;
+	background-color: #fff;
+	top:0px;
+}
+/* logo */
+.logo{
+	margin-left: 80px;
+}
+.logo-image img{
+	width:350px;
+	height:220px;
+	border:0px;
+	margin-top: 10px;
+}
+/* 会员登录指示图标 */
+.login-bar{
+	float: left;
+	position: absolute;
+	margin-top: 5px;
+	margin-left: 800px;
+}
+.login-icon{
+	width:180px;
+	height:150px;
+	border:0px;
+}
+/* 搜索框*/
+.search {
+	width: 197px;
+	float:left;
+	position: absolute;
+            	margin-left: 820px;
+            	margin-top: -50px;
+}
+.assistive{
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
+#searchArea{                                                 /* 注意要使用 id，而不能使用 class，否则样式无效 */
+	font-size: 14px;
+            	width:90px;
+            	height:22px;
+            	line-height: 22px;
+            	float:right;
+            	padding: 4px 10px 4px 28px;
+	background: url(../images/search.jpg) no-repeat 5px 6px;
+	background-color: #fff;	
+	border: 1px solid #ddd;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+	outline:none;
+
+	-webkit-transition-property: width, background;
+	-webkit-transition-duration: 400ms;
+	-webkit-transition-timing-function: ease;
+	
+	-moz-transition-property: width, background;
+	-moz-transition-duration: 400ms;
+	-moz-transition-timing-function: ease;
+
+	transition-property: width, background;
+	transition-duration: 400ms;
+	transition-timing-function: ease;
+}
+#searchArea:focus {
+	width:150px;	
+}
+#searchSubmit{
+	display: none;
+}
+/* 导航条 */
+.nav{
+	width:1100px;
+	height:30px;
+	border-bottom: 1px solid #0099FF;
+	margin:13px auto;
+}
+.nav ul{
+	list-style-type: none;
+	margin:0px;
+}
+.nav ul li{
+	float: left;
+	display: inline;
+	width:80px;
+	height:30px;
+	text-align: center;
+	margin-right: 5px;
+	background: rgb(109,179,242); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(109,179,242,1) 0%, rgba(84,163,238,1) 50%, rgba(54,144,240,1) 51%, rgba(30,105,222,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(109,179,242,1)), color-stop(50%,rgba(84,163,238,1)), color-stop(51%,rgba(54,144,240,1)), color-stop(100%,rgba(30,105,222,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6db3f2', endColorstr='#1e69de',GradientType=0 ); /* IE6-9 */
+}
+.nav ul li a{
+	width:80px;
+	height: 30px;
+	display: block;
+	text-decoration: none;
+	line-height: 33px;
+	color: #fff;
+	font-size: 15px;
+}
+.nav ul li a:hover{
+	background: rgb(252,234,187); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(252,234,187,1) 0%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,234,187,1)), color-stop(50%,rgba(252,205,77,1)), color-stop(51%,rgba(248,181,0,1)), color-stop(100%,rgba(251,223,147,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(252,234,187,1) 0%,rgba(252,205,77,1) 50%,rgba(248,181,0,1) 51%,rgba(251,223,147,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(252,234,187,1) 0%,rgba(252,205,77,1) 50%,rgba(248,181,0,1) 51%,rgba(251,223,147,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(252,234,187,1) 0%,rgba(252,205,77,1) 50%,rgba(248,181,0,1) 51%,rgba(251,223,147,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(252,234,187,1) 0%,rgba(252,205,77,1) 50%,rgba(248,181,0,1) 51%,rgba(251,223,147,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93',GradientType=0 ); /* IE6-9 */
+}
+/* 导航下主内容 */
+.container{
+	width:1100px;
+	height:1295px;
+	margin:0px auto;
+	padding:0px;
+}
+.ad, .activities, .animals-news, .discounts, .follow-us, .store-intro, .links{
+	-webkit-box-shadow:1px 2px 5px #ddd;
+	-moz-box-shadow:1px 2px 5px #ddd;
+	box-shadow:1px 2px 5px #ddd; 
+}
+.main{
+	width:800px;
+	height: auto;
+	float: left;
+}
+.banner-index{
+	width:800px;
+	height:260px;
+}
+/* 宣传轮番大图 */
+.ad{
+	width:800px; 
+	height:260px;
+	border:1px solid #ddd;
+	float:left;
+	margin-left: -1px;
+	background-color: #fff;
+}
+.picture-show-box{
+	position: relative;
+}
+.picture-show{
+	width: 800px;
+	height: 260px;
+	overflow: hidden;
+	position: relative;
+}
+.picture-show ul{
+	width: 4000px;
+	height: 260px;
+	position: absolute;
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+}
+.picture-show li{
+	width: 800px;
+	height: 260px;
+	float: left;
+}
+.picture-show li img{
+	border:0px;
+}
+.index{
+	position: absolute;
+	right: 10px;
+	margin-top: -25px;
+}
+.index span{
+	width: 33px;
+	height: 20px;
+	line-height: 20px;
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+	background-color: #5FEB3B;
+	color: #fff;
+}
+.index .current{
+	background-color: #2DD700;
+}
+/* 标题党 */
+.title img{
+	border:0px;
+	width:260px;
+	height:80px;
+}
+/* 实体店说和宠物资讯 */
+.intro-news{
+	width:800px;
+	height:auto;
+	margin-top: 15px;
+}
+.store-intro{
+	width:391px;
+	height:300px;
+	border:1px solid #ddd;
+	float: left;
+	background-color: #fff;
+}
+.intro-detail{
+	width: 360px;
+	line-height: 30px;
+	margin-left: 15px;
+	margin-top: 15px;
+	text-indent: 2em;
+}
+.animals-news{
+	width:391px;
+	height:300px;
+	border:1px solid #ddd;
+	float: right;
+	margin-right: -1px;
+	background-color: #fff;
+}
+.animals-news ul{
+	list-style-type: none;
+	padding: 0px;
+	margin-top: 10px;
+}
+.animals-news ul li{
+	margin-left: 20px;
+	line-height: 30px;
+}
+.animals-news ul li a{
+	text-decoration: none;
+	color: #333;
+}
+.animals-news ul li a:hover{
+	text-decoration: underline;
+}
+.icon-news{
+	background-image: url('../images/icon1-2.png');
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 35px 35px;
+}
+/* 优惠商品 */
+.discounts{
+	width:800px;
+	height:695px;
+	border:1px solid #ddd;
+	position: absolute;
+	margin-top: 13px;
+	background-color: #fff;
+}
+.discount-content{
+	list-style-type: none;
+	padding: 0px;
+	margin-top: 8px;
+}
+.discount-intro{
+	border:1px solid #eee;
+	width:248px;
+	height:280px;
+	text-align: center;
+	display: inline-block;
+	margin-left: 10px;
+	margin-bottom: 15px;
+}
+.discount-intro:nth-child(3n){
+}
+.discount-intro a{
+	text-decoration: none;
+	color: #333;
+}
+.discount-intro a:hover{
+	text-decoration: underline;
+}
+.discount-intro a img{
+	width:238px;
+	height:210px;
+}
+.discount-intro a h1{
+	font-size: 15px;
+	font-weight: normal;
+}
+.cost{
+	font-size: 18px;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+/* 关注和实体店介绍 */
+.sidebar{
+	float: right;
+}
+/* 关注我们 */
+.follow-us{
+	width:280px;
+	height:260px;
+	border:1px solid #ddd;
+	background-color: #fff;
+}
+.follow-us a img{
+	border:0px;
+	margin-top:18px;
+	margin-left: 8px;
+}
+.activities{
+	width:280px;
+	height:695px;
+	border:1px solid #ddd;
+	margin-top: 13px;
+	background-color: #fff;
+}
+.a-act{
+	width:260px;
+	height:190px;
+	margin:0px auto;
+	border:1px solid #eee; 
+	text-align: center;
+	margin-top: 8px;
+}
+.a-act a{
+	text-decoration: none;
+	color: #333;
+}
+.a-act a:hover{
+	text-decoration: underline;
+}
+.a-act a img{
+	width:250px;
+	height:160px;
+	border:0px;
+}
+.a-act a h1{
+	font-size: 15px;
+	font-weight: normal;
+	margin-top: 5px;
+	line-height: 20px;
+}
+/* 友情链接 */
+.links{
+	width:280px;
+	height:300px;
+	border:1px solid #ddd;
+	margin-top: 13px;
+	background-color: #fff;
+}
+.links ul{
+	list-style-type: none;
+	padding: 0px;
+}
+.icon-link{
+	background-image: url('../images/icon1-7.png');
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 35px 35px;
+}
+.links ul li{
+	line-height: 30px;
+	margin-left: 25px;
+}
+.links ul li a{
+	text-decoration: none;
+	color: #333;
+}
+.links ul li a:hover{
+	text-decoration: underline;
+}
+.footer{
+	width:100%;
+	height:80px;
+	border-top:1px solid #ddd;
+	bottom: 0px;
+	text-align: center;
+	margin-top: 5px;
+}
+.footer p{
+	line-height: 20px;
+	margin-top: 20px;
+	color: #aaa;
+}
+
